@@ -1,0 +1,268 @@
+/* Declaração das fontes (Padronizado com o do Grupo) */
+@font-face {
+    font-family: dosis-book;
+    src: url('fonts/dosis-book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: dosis-bold;
+    src: url('fonts/dosis-bold.ttf') format("truetype");
+}
+
+/* Zerar a margem (Padronizado com o do Grupo) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: dosis-book;
+    color: #646464;
+    text-align: center;
+    justify-content: center;
+  }
+
+/*Tamanho da imagem do logo*/
+.header>img{
+    height: 10px;  
+    width: 10px;
+}
+
+/* Parte total da pagina (Padronizado com o do Grupo) */
+.container {
+   /*border: solid rgb(255, 174, 0);*/
+   height: 100vh;
+   display: flex;
+   flex-flow: row wrap-reverse;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+/* Cabeçalho geral: Parte onde estão os dados (Padronizado com o do Grupo) */
+header {
+    /*border: solid black;*/
+    padding:10px;
+    height: 100vh;
+    grid-area:header;
+}
+
+/* Caixa branca do cabeçalho (Padronizado com o do Grupo) */
+.caixadotituloprincipal {
+    /*border: solid purple;*/
+    width: auto;
+    height: auto;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+    gap: auto;
+}
+
+/* Título principal (Padronizado com o do Grupo) */
+h1 {
+    width: 100%;
+    font-family: dosis-bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Cor laranja do título principal - parte "doar e adotar" */
+h1>b {
+    font-family: dosis-bold;
+    color: #ff9f32;
+}
+
+/* Titúlo secundário (Padronizado com o do Grupo) */
+.caixadotitulosecundario {
+    /*border: solid gold;*/
+    width: auto;
+    height: auto;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+    gap: auto;
+}
+
+/* Título secundário estilo */
+h2 {
+    width: 100%;
+    font-family: dosis-bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #ff9f32;
+}
+
+.caixadonomedoanimal {
+    /*border: solid rgb(255, 0, 157);*/
+    width: auto;
+    height: auto;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);   
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    gap: auto;
+}
+
+/* Estilo da caixa do nome do animal */
+input[type="text"]{
+    width: 500px;
+    height: 30px;
+    text-align: center;    
+}
+
+/* configuração da div do tipo de animal*/
+.tipodoanimal {
+    /*border: solid rgb(0, 255, 42); */
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    flex-flow: row wrap;
+    position: relative;
+    gap: auto;
+    
+}
+
+.tipodoanimal p{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.tipodoanimal>a>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+/* configuração da div do sexo do animal*/
+.sexodoanimal {
+    /*border: solid rgb(0, 255, 42); */
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    flex-flow: row wrap;
+    gap: auto;
+}
+
+.sexodoanimal p{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.sexodoanimal>a>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* configuração da div do porte do animal*/
+
+.portedoanimal {
+    /*border: solid rgb(0, 255, 42); */
+    width: auto;
+    height: auto;
+    display:inline-flex;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    flex-flow: row wrap;
+    text-align: justify;
+    gap: auto;
+}
+
+.portedoanimal p{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.portedoanimal>a>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* configuração da div da cor do animal*/
+.cordoanimal {
+    /*border: solid rgb(255, 0, 0);*/
+    width: auto;
+    height: auto;
+    background-color: white;
+    box-shadow: px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: auto;
+}
+
+.cordoanimal p{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+
+/* Configuração da altura dos ícones cordoanimal */
+.cordoanimal>b>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 5px;
+    display: flex;
+}
+
+@media(max-width:600px){
+    #porte {
+        background-color: #ff9f32;
+    } 
+}
+    
+  
+
+/* O Botão avançar está com o estilo feito dentro do próprio
+HTML, usei as seguintes caracteristicas:
+"width: 100%;
+font-family: dosis-bold;
+font-size: 20px;
+text-align: jcenter;
+color: white;
+background-color: #ff9f32;" */
+
+
+
+
+
+
